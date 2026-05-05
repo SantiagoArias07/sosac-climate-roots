@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useEffect, useState } from 'react'
-import { useInView, animate } from 'framer-motion'
+import { useInView } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
 interface AnimatedNumberProps {
@@ -11,6 +11,10 @@ interface AnimatedNumberProps {
   decimals?: number
   duration?: number
   className?: string
+}
+
+function easeOutQuint(t: number): number {
+  return 1 - Math.pow(1 - t, 5)
 }
 
 export function AnimatedNumber({
@@ -23,35 +27,38 @@ export function AnimatedNumber({
 }: AnimatedNumberProps) {
   const ref = useRef<HTMLSpanElement>(null)
   const isInView = useInView(ref, { once: true, amount: 0 })
-  const [hasAnimated, setHasAnimated] = useState(false)
+  const [current, setCurrent] = useState(0)
+  const hasStarted = useRef(false)
 
   useEffect(() => {
-    if (!isInView || hasAnimated || !ref.current) return
-    setHasAnimated(true)
+    if (!isInView || hasStarted.current) return
+    hasStarted.current = true
 
-    const controls = animate(0, value, {
-      duration,
-      ease: [0.22, 1, 0.36, 1],
-      onUpdate(latest) {
-        if (ref.current) {
-          const formatted =
-            decimals > 0
-              ? latest.toFixed(decimals)
-              : Math.round(latest).toLocaleString('en-US')
-          ref.current.textContent = prefix + formatted + suffix
-        }
-      },
-    })
+    const startTime = performance.now()
+    const durationMs = duration * 1000
+    let frameId: number
 
-    return () => controls.stop()
-  }, [isInView, hasAnimated, value, duration, decimals, prefix, suffix])
+    function tick() {
+      const elapsed = performance.now() - startTime
+      const progress = Math.min(elapsed / durationMs, 1)
+      setCurrent(value * easeOutQuint(progress))
+      if (progress < 1) {
+        frameId = requestAnimationFrame(tick)
+      }
+    }
 
-  const initialDisplay =
-    decimals > 0 ? (0).toFixed(decimals) : '0'
+    frameId = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(frameId)
+  }, [isInView, value, duration])
+
+  const formatted =
+    decimals > 0
+      ? current.toFixed(decimals)
+      : Math.round(current).toLocaleString('en-US')
 
   return (
     <span ref={ref} className={cn(className)}>
-      {prefix}{initialDisplay}{suffix}
+      {prefix}{formatted}{suffix}
     </span>
   )
 }
