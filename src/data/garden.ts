@@ -185,7 +185,7 @@ export const plants: Plant[] = [
     zoneId: 'polinizador',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1595252129934-8c30be5e4e2d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80',
     accentColor: '#9B7EC8',
   },
   {
@@ -385,7 +385,7 @@ export const plants: Plant[] = [
     zoneId: 'huerto',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80',
     accentColor: '#8B6B45',
   },
   {
@@ -405,7 +405,7 @@ export const plants: Plant[] = [
     zoneId: 'polinizador',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1571945153237-4929e783af4a?auto=format&fit=crop&w=800&q=80',
     accentColor: '#D44B2A',
   },
 ]
@@ -420,7 +420,7 @@ export const sessions: Session[] = [
     participants: 28,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80',
     tags: ['compostaje', 'suelo', 'microvida'],
   },
   {
@@ -489,7 +489,7 @@ export const fauna: Fauna[] = [
     type: FaunaType.Polinizador,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1563699500944-8e2e8b09f2e9?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1559733760-f81e9f957ee5?auto=format&fit=crop&w=600&q=80',
     note: 'Colonizó el tronco de mezquite viejo. Especie nativa vulnerable.',
   },
   {
@@ -529,7 +529,7 @@ export const fauna: Fauna[] = [
     type: FaunaType.Insecto,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1618329253729-e6abb0f6bef2?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1597566833495-28661e54543a?auto=format&fit=crop&w=600&q=80',
     note: 'Ecosistema de compostaje. Fauna esencial para la mineralización del suelo.',
   },
   {

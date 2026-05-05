@@ -10,7 +10,8 @@ export function Footer() {
   return (
     <footer
       ref={ref}
-      className="relative overflow-hidden bg-ink pt-20 pb-10"
+      className="relative overflow-hidden pt-20 pb-10"
+      style={{ background: '#0F1A12' }}
     >
       {/* Big oversized wordmark */}
       <div className="relative overflow-hidden mb-16">
@@ -21,8 +22,8 @@ export function Footer() {
           className="px-6 md:px-10 lg:px-16"
         >
           <span
-            className="font-display font-black text-bg select-none leading-none block"
-            style={{ fontSize: 'clamp(5rem, 22vw, 20rem)', opacity: 0.06 }}
+            className="font-display font-black select-none leading-none block"
+            style={{ fontSize: 'clamp(5rem, 22vw, 20rem)', opacity: 0.07, color: '#EDE7D8' }}
           >
             SOSAC
           </span>
@@ -49,7 +50,7 @@ export function Footer() {
                 <span className="text-bg text-xs font-bold">S</span>
               </div>
               <span className="font-display font-bold text-white text-lg">
-                SOSAC-Lab
+                Climate Roots
               </span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
@@ -72,10 +73,10 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:contacto@sosac.org"
+                  href="mailto:hola@sosac.org"
                   className="text-white/60 hover:text-white transition-colors text-sm underline-draw"
                 >
-                  contacto@sosac.org
+                  hola@sosac.org
                 </a>
               </li>
               <li>

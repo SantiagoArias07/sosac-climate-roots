@@ -10,21 +10,24 @@ const stats = [
     value: 1100,
     prefix: '',
     suffix: ' m²',
-    label: 'Área regenerada',
+    label: 'Área de cobertura vegetal recuperada',
+    sublabel: 'Con acciones de mantenimiento',
     decimals: 0,
   },
   {
     value: 1.2,
     prefix: '–',
-    suffix: ' °C',
-    label: 'Reducción de calor urbano',
+    suffix: ' °C*',
+    label: 'Reducción de islas de calor',
+    sublabel: 'Mejora de sensación térmica',
     decimals: 1,
   },
   {
     value: 147,
     prefix: '',
     suffix: '',
-    label: 'Participantes en Café & Jardín',
+    label: 'participantes',
+    sublabel: 'En 4 sesiones de Café & Jardín',
     decimals: 0,
   },
 ]
@@ -146,7 +149,7 @@ export function Hero() {
           {/* Main headline — two lines */}
           <div className="overflow-hidden">
             <motion.h1
-              className="font-display font-black text-hero text-bg leading-none"
+              className="font-display font-black text-hero text-white leading-none"
               initial={{ y: '100%' }}
               animate={{ y: 0 }}
               transition={{ duration: 1.1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
@@ -156,8 +159,8 @@ export function Hero() {
           </div>
           <div className="overflow-hidden">
             <motion.span
-              className="block font-display font-black text-hero text-leaf italic leading-none"
-              style={{ marginTop: '-0.05em' }}
+              className="block font-display font-black text-hero italic leading-none"
+              style={{ marginTop: '-0.05em', color: '#87A878' }}
               initial={{ y: '100%' }}
               animate={{ y: 0 }}
               transition={{ duration: 1.1, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
@@ -168,7 +171,7 @@ export function Hero() {
 
           {/* Subtitle */}
           <motion.p
-            className="mt-6 md:mt-8 max-w-lg text-bg/75 text-base md:text-lg leading-relaxed"
+            className="mt-6 md:mt-8 max-w-lg text-white/80 text-base md:text-lg leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
@@ -187,8 +190,8 @@ export function Hero() {
             {stats.map((stat, i) => (
               <div key={i} className="flex flex-col gap-1">
                 <div
-                  className="font-display font-black text-bg leading-none"
-                  style={{ fontSize: 'clamp(1.8rem, 5vw, 3.5rem)' }}
+                  className="font-display font-black text-white leading-none"
+                  style={{ fontSize: 'clamp(1.6rem, 4.5vw, 3.2rem)' }}
                 >
                   <AnimatedNumber
                     value={stat.value}
@@ -198,9 +201,14 @@ export function Hero() {
                     duration={2}
                   />
                 </div>
-                <p className="text-bg/50 text-xs md:text-sm leading-tight">
+                <p className="text-white/75 text-[0.7rem] md:text-xs leading-snug mt-0.5">
                   {stat.label}
                 </p>
+                {'sublabel' in stat && stat.sublabel && (
+                  <p className="text-white/45 text-[0.65rem] leading-snug">
+                    {stat.sublabel}
+                  </p>
+                )}
               </div>
             ))}
           </motion.div>
@@ -215,10 +223,10 @@ export function Hero() {
         transition={{ delay: 1.6, duration: 0.8 }}
         style={{ opacity }}
       >
-        <span className="text-bg/40 text-[0.65rem] uppercase tracking-[0.3em] rotate-90 origin-center translate-y-0">
+        <span className="text-white/40 text-[0.65rem] uppercase tracking-[0.3em] rotate-90 origin-center translate-y-0">
           scroll
         </span>
-        <div className="w-px h-10 bg-bg/20 relative overflow-hidden">
+        <div className="w-px h-10 bg-white/20 relative overflow-hidden">
           <motion.div
             className="absolute top-0 left-0 right-0 bg-leaf"
             style={{ height: '40%' }}

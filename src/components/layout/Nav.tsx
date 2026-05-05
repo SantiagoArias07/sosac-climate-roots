@@ -50,7 +50,7 @@ export function Nav() {
         <a
           href="#"
           className="group flex items-center gap-2 focus-visible:outline-none"
-          aria-label="SOSAC-Lab inicio"
+          aria-label="Climate Roots inicio"
         >
           <div className="w-8 h-8 rounded-full bg-moss flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-bg">
@@ -59,7 +59,7 @@ export function Nav() {
             </svg>
           </div>
           <span className="font-display font-bold text-lg tracking-tight text-ink">
-            SOSAC<span className="text-moss">-Lab</span>
+            Climate<span className="text-moss"> Roots</span>
           </span>
         </a>
 

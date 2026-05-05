@@ -34,8 +34,11 @@ export function AnimatedNumber({
       ease: [0.22, 1, 0.36, 1],
       onUpdate(latest) {
         if (ref.current) {
-          ref.current.textContent =
-            prefix + latest.toFixed(decimals) + suffix
+          const formatted =
+            decimals > 0
+              ? latest.toFixed(decimals)
+              : Math.round(latest).toLocaleString('en-US')
+          ref.current.textContent = prefix + formatted + suffix
         }
       },
     })
@@ -43,9 +46,12 @@ export function AnimatedNumber({
     return () => controls.stop()
   }, [isInView, hasAnimated, value, duration, decimals, prefix, suffix])
 
+  const initialDisplay =
+    decimals > 0 ? (0).toFixed(decimals) : '0'
+
   return (
     <span ref={ref} className={cn(className)}>
-      {prefix}0{suffix}
+      {prefix}{initialDisplay}{suffix}
     </span>
   )
 }
