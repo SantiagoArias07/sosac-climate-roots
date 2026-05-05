@@ -215,25 +215,35 @@ export function Hero() {
         </div>
       </motion.div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator — bottom-right, editorial mouse icon */}
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.6, duration: 0.8 }}
+        className="absolute bottom-8 right-6 md:right-10 lg:right-16 z-10 flex flex-col items-center gap-3"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.8, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         style={{ opacity }}
+        aria-hidden="true"
       >
-        <span className="text-white/40 text-[0.65rem] uppercase tracking-[0.3em] rotate-90 origin-center translate-y-0">
-          scroll
-        </span>
-        <div className="w-px h-10 bg-white/20 relative overflow-hidden">
+        {/* Mouse silhouette */}
+        <div className="w-[22px] h-[34px] rounded-full border border-white/35 flex justify-center pt-[6px]">
           <motion.div
-            className="absolute top-0 left-0 right-0 bg-leaf"
-            style={{ height: '40%' }}
-            animate={{ y: ['0%', '250%'] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
+            className="w-[3px] h-[8px] rounded-full bg-white/70"
+            animate={{ y: [0, 10, 0], opacity: [1, 0.2, 1] }}
+            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
           />
         </div>
+        {/* Label */}
+        <span
+          className="text-white/35 font-mono"
+          style={{
+            fontSize: '0.6rem',
+            letterSpacing: '0.22em',
+            textTransform: 'uppercase',
+            writingMode: 'vertical-rl',
+          }}
+        >
+          scroll
+        </span>
       </motion.div>
     </section>
   )
