@@ -365,7 +365,7 @@ export const plants: Plant[] = [
     zoneId: 'medicinal',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1596368823117-3bd7df7b64f9?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80',
     accentColor: '#5CAE6A',
   },
   {
@@ -489,7 +489,7 @@ export const fauna: Fauna[] = [
     type: FaunaType.Polinizador,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1559733760-f81e9f957ee5?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1551731409-43eb3e517a1a?auto=format&fit=crop&w=600&q=80',
     note: 'Colonizó el tronco de mezquite viejo. Especie nativa vulnerable.',
   },
   {
@@ -529,7 +529,7 @@ export const fauna: Fauna[] = [
     type: FaunaType.Insecto,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1597566833495-28661e54543a?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?auto=format&fit=crop&w=600&q=80',
     note: 'Ecosistema de compostaje. Fauna esencial para la mineralización del suelo.',
   },
   {

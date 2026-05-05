@@ -22,7 +22,7 @@ export function AnimatedNumber({
   className,
 }: AnimatedNumberProps) {
   const ref = useRef<HTMLSpanElement>(null)
-  const isInView = useInView(ref, { once: true, margin: '-10% 0px' })
+  const isInView = useInView(ref, { once: true, amount: 0 })
   const [hasAnimated, setHasAnimated] = useState(false)
 
   useEffect(() => {
