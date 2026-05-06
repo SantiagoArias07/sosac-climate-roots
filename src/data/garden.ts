@@ -185,7 +185,7 @@ export const plants: Plant[] = [
     zoneId: 'polinizador',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1600759487717-62bbb608106e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     accentColor: '#9B7EC8',
   },
   {
@@ -205,7 +205,7 @@ export const plants: Plant[] = [
     zoneId: 'aromatico',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1594313016519-640ed47407ea?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cm9tZXJvfGVufDB8fDB8fHww',
     accentColor: '#5B8A5E',
   },
   {
@@ -225,17 +225,17 @@ export const plants: Plant[] = [
     zoneId: 'polinizador',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1599598425947-5202edd56bdb?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1759579720103-5ce1b98c414a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFNhbHZpYSUyME1leGljYW5hfGVufDB8fDB8fHww',
     accentColor: '#6B5EA8',
   },
   {
-    id: 'ahuehuete',
-    slug: 'ahuehuete',
-    commonName: 'Ahuehuete',
-    scientificName: 'Taxodium mucronatum',
-    types: [PlantType.Ornamental],
+    id: 'Anacahuita',
+    slug: 'Anacahuita',
+    commonName: 'Anacahuita',
+    scientificName: 'TCordia boissieri',
+    types: [PlantType.Ornamental, PlantType.Polinizadora],
     description:
-      'Árbol nacional de México. El "árbol viejo del agua" puede vivir más de 2,000 años. Su presencia en el jardín simboliza la memoria larga de la naturaleza.',
+      'Árbol emblemático de Nuevo León. Flores blancas grandes durante todo el año, atrae abejas y mariposas. Resistente a la sequía y al calor extremo del norte. Símbolo de los paisajes regiomontanos.',
     benefits: [
       'Captura CO₂ a gran escala',
       'Proporciona sombra y reduce el calor urbano',
@@ -245,7 +245,7 @@ export const plants: Plant[] = [
     zoneId: 'cafe-jardin',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1710604133434-debeb44a9e97?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFyYm9sJTIwZmxvcmVzJTIwYmxhbmNhc3xlbnwwfHwwfHx8MA%3D%3D',
     accentColor: '#3D6B3A',
   },
   {
@@ -265,7 +265,7 @@ export const plants: Plant[] = [
     zoneId: 'cafe-jardin',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1723209249541-65cdb545fc6d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFyYm9sJTIwY29uJTIwaG9qYXMlMjBhbmdvc3Rhc3xlbnwwfHwwfHx8MA%3D%3D',
     accentColor: '#8A6A30',
   },
   {
@@ -285,7 +285,7 @@ export const plants: Plant[] = [
     zoneId: 'polinizador',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1723695874727-85172c022dc3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2VtcGFzJUMzJUJBY2hpbHxlbnwwfHwwfHx8MA%3D%3D',
     accentColor: '#E88A1C',
   },
   {
@@ -305,7 +305,7 @@ export const plants: Plant[] = [
     zoneId: 'huerto',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1618375569909-3c8616cf7733?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1629157247277-48f870757026?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QWxiYWhhY2F8ZW58MHx8MHx8fDA%3D',
     accentColor: '#4A8A40',
   },
   {
@@ -325,7 +325,7 @@ export const plants: Plant[] = [
     zoneId: 'medicinal',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1687246493079-1361abc6d875?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TWFuemFuaWxsYXxlbnwwfHwwfHx8MA%3D%3D',
     accentColor: '#C8B840',
   },
   {
@@ -345,7 +345,7 @@ export const plants: Plant[] = [
     zoneId: 'huerto',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1603653856395-084002e5d39d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8SGllcmJhYnVlbmF8ZW58MHx8MHx8fDA%3D',
     accentColor: '#3A9E60',
   },
   {
@@ -365,7 +365,7 @@ export const plants: Plant[] = [
     zoneId: 'medicinal',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1725233063849-a7fb69fd22f3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UyVDMyVBMWJpbGElMjAoQWxvZSUyMFZlcmEpfGVufDB8fDB8fHww',
     accentColor: '#5CAE6A',
   },
   {
@@ -385,17 +385,17 @@ export const plants: Plant[] = [
     zoneId: 'huerto',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1612409481622-d186e5108430?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbWElMjBibGFuY2F8ZW58MHx8MHx8fDA%3D',
     accentColor: '#8B6B45',
   },
   {
-    id: 'ocotillo',
-    slug: 'ocotillo',
-    commonName: 'Ocotillo',
-    scientificName: 'Fouquieria splendens',
-    types: [PlantType.Ornamental, PlantType.Polinizadora],
+    id: 'Huizache',
+    slug: 'Huizache',
+    commonName: 'Huizache',
+    scientificName: 'Vachellia farnesiana',
+    types: [PlantType.Medicinal, PlantType.Polinizadora],
     description:
-      'Escultura viva del desierto. Sus tallos espinosos coronados de flores rojas en la punta son una de las imágenes más icónicas del semidesierto norteño.',
+      'Árbol nativo del noreste mexicano. Sus flores amarillas en forma de pompón son fuente clave de néctar y se usan en perfumería. Fija nitrógeno, mejorando la calidad del suelo del jardín.',
     benefits: [
       'Flores ricas en néctar para colibríes',
       'Tolera calor extremo y sequía',
@@ -405,7 +405,7 @@ export const plants: Plant[] = [
     zoneId: 'polinizador',
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1571945153237-4929e783af4a?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1710535940615-3d5f41515250?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJib2wlMjBmbG9yZXMlMjBwb21wb24lMjBhbWFyaWxsYXN8ZW58MHx8MHx8fDA%3D',
     accentColor: '#D44B2A',
   },
 ]
