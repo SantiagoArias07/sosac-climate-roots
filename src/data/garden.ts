@@ -416,11 +416,11 @@ export const sessions: Session[] = [
     date: '2025-02-15',
     title: 'Suelo vivo: compostaje y microvida',
     description:
-      'Primera sesión del año. Exploramos la ecología del suelo, construimos la primera cama de compostaje comunitaria y probamos el café preparado con agua de lluvia recolectada en el jardín.',
+      'Primera sesión del año. Exploramos la ecología del suelo, construimos la primera cama de compostaje comunitaria y compartimos café acompañando el ritmo del suelo.',
     participants: 28,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1649577193391-f13d769d011d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvbXBvc3QlMjBzb2lsJTIwaGFuZHN8ZW58MHx8MHx8fDA%3D',
     tags: ['compostaje', 'suelo', 'microvida'],
   },
   {
@@ -432,7 +432,7 @@ export const sessions: Session[] = [
     participants: 41,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1737279129724-6784754c7279?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFBlcnNvbmElMjByZWNvbGVjdGFuZG8lMjBoaWVyYmFzJTIwbWVkaWNpbmFsZXN8ZW58MHx8MHx8fDA%3D',
     tags: ['medicinal', 'etnobotánica', 'tradición'],
   },
   {
@@ -444,7 +444,7 @@ export const sessions: Session[] = [
     participants: 38,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1645727527942-f12e14a0c841?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdvdGFzJTIwZGUlMjBhZ3VhJTIwc29icmUlMjB0aWVycmF8ZW58MHx8MHx8fDA%3D',
     tags: ['agua', 'captación', 'riego'],
   },
   {
@@ -452,11 +452,11 @@ export const sessions: Session[] = [
     date: '2025-05-17',
     title: 'Polinizadores urbanos: más allá de la abeja',
     description:
-      'Exploración fotográfica y científica de los insectos polinizadores del jardín. Identificamos 14 especies, incluyendo tres nunca registradas en la zona metropolitana.',
+      'Identificamos 14 especies, incluyendo varias poco documentadas en jardines urbanos de la zona metropolitana.',
     participants: 40,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1568469931133-fd8e6e24a7fb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJlZSUyMG9uJTIwZmxvd2VyJTIwY2xvc2UlMjB1cHxlbnwwfHwwfHx8MA%3D%3D',
     tags: ['polinizadores', 'biodiversidad', 'ciencia ciudadana'],
   },
 ]
@@ -464,12 +464,12 @@ export const sessions: Session[] = [
 export const fauna: Fauna[] = [
   {
     id: 'colibri-magnifico',
-    commonName: 'Colibrí Magnífico',
-    scientificName: 'Eugenes fulgens',
+    commonName: 'Colibrí de Pico Ancho',
+    scientificName: 'Cynanthus latirostris',
     type: FaunaType.Ave,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1683470432347-7b40520fb583?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q29saWJyJUMzJUFEJTIwZGUlMjBQaWNvJTIwQW5jaG98ZW58MHx8MHx8fDA%3D',
     note: 'Visitante regular. Se alimenta de la salvia mexicana y el ocotillo.',
   },
   {
@@ -479,7 +479,7 @@ export const fauna: Fauna[] = [
     type: FaunaType.Polinizador,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1562262560-d5c98204f981?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TWFyaXBvc2ElMjBNb25hcmNhfGVufDB8fDB8fHww',
     note: 'Paso migratorio registrado en octubre. El jardín forma parte de su corredor.',
   },
   {
@@ -489,17 +489,17 @@ export const fauna: Fauna[] = [
     type: FaunaType.Polinizador,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1551731409-43eb3e517a1a?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1610029562712-f11b174e1f23?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8QWJlamElMjBDYXJwaW50ZXJhfGVufDB8fDB8fHww',
     note: 'Colonizó el tronco de mezquite viejo. Especie nativa vulnerable.',
   },
   {
     id: 'cardenal-piranga',
-    commonName: 'Piranga Escarlata',
-    scientificName: 'Piranga olivacea',
+    commonName: 'Cardenal Norteño',
+    scientificName: 'Cardinalis cardinalis',
     type: FaunaType.Ave,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1615146101981-cf25d1a1e6a1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2FyZGVuYWwlMjBOb3J0ZSVDMyVCMW98ZW58MHx8MHx8fDA%3D',
     note: 'Ave migratoria de paso. Avistada en el mezquite durante octubre-noviembre.',
   },
   {
@@ -509,7 +509,7 @@ export const fauna: Fauna[] = [
     type: FaunaType.Reptil,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1615517331934-ac4895f6f04b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxhZ2FydGlqYSUyMGVzcGlub3NhJTIwZGVsJTIwbm9ydGV8ZW58MHx8MHx8fDA%3D',
     note: 'Residente permanente. Control natural de insectos. Ama el calor del compostaje.',
   },
   {
@@ -519,17 +519,17 @@ export const fauna: Fauna[] = [
     type: FaunaType.Ave,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1591608971362-f08b2a75731a?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1719216324402-9490b46bdbc5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q29saWJyJUMzJUFEJTIwQ29yb25hJTIwVmlvbGV0YXxlbnwwfHwwfHx8MA%3D%3D',
     note: 'El más frecuente. Defiende su territorio en el jardín polinizador.',
   },
   {
     id: 'escarabajo-dung',
-    commonName: 'Escarabajo Pelotero',
-    scientificName: 'Scarabaeus sacer',
+    commonName: 'Escarabajo Estercolero Mexicano',
+    scientificName: 'Canthon humectus',
     type: FaunaType.Insecto,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1568118976547-c2ec80f9c725?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RXNjYXJhYmFqbyUyMEVzdGVyY29sZXJvJTIwTWV4aWNhbm98ZW58MHx8MHx8fDA%3D',
     note: 'Ecosistema de compostaje. Fauna esencial para la mineralización del suelo.',
   },
   {
@@ -539,7 +539,7 @@ export const fauna: Fauna[] = [
     type: FaunaType.Ave,
     // TODO: replace with SOSAC photo
     imageUrl:
-      'https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1739974747316-418d0f45990b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fEdvcnJpJUMzJUIzbiUyME1leGljYW5vfGVufDB8fDB8fHww',
     note: 'Residente. Construyó nido en la zona de Café & Jardín. Especie urbana adaptada.',
   },
 ]
