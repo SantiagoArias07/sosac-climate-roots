@@ -27,10 +27,15 @@ export function Nav() {
 
   function handleNavClick(href: string) {
     setMenuOpen(false)
-    const el = document.querySelector(href)
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' })
-    }
+    // Delay lets the mobile menu close animation finish before scrolling.
+    // scrollIntoView conflicts with Lenis on mobile; offsetTop + scrollTo works correctly.
+    setTimeout(() => {
+      const el = document.querySelector(href) as HTMLElement | null
+      if (!el) return
+      const navHeight = 72
+      const top = el.getBoundingClientRect().top + window.pageYOffset - navHeight
+      window.scrollTo({ top, behavior: 'smooth' })
+    }, 380)
   }
 
   return (

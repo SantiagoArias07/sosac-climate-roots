@@ -45,13 +45,17 @@ export function Catalogue() {
               Catálogo
             </motion.p>
             <h2 className="text-h2 font-display font-black text-ink leading-tight">
-              <ScrambleText text="Las plantas del" delay={0.1} />
-              {' '}
-              <ScrambleText
-                text="jardín"
-                className="italic text-moss"
-                delay={0.4}
-              />
+              <span className="block md:inline">
+                <ScrambleText text="Las plantas del" delay={0.1} />
+              </span>
+              {/* whitespace-nowrap keeps "jardín" as one unit — never breaks mid-word */}
+              <span className="inline-block whitespace-nowrap md:ml-[0.25em]">
+                <ScrambleText
+                  text="jardín"
+                  className="italic text-moss"
+                  delay={0.4}
+                />
+              </span>
             </h2>
           </div>
 

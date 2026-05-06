@@ -215,35 +215,45 @@ export function Hero() {
         </div>
       </motion.div>
 
-      {/* Scroll indicator — bottom-right, editorial mouse icon */}
+      {/* Scroll indicator — bottom-center, animated chevron */}
       <motion.div
-        className="absolute bottom-8 right-6 md:right-10 lg:right-16 z-10 flex flex-col items-center gap-3"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.8, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 1 }}
         style={{ opacity }}
         aria-hidden="true"
       >
-        {/* Mouse silhouette */}
-        <div className="w-[22px] h-[34px] rounded-full border border-white/35 flex justify-center pt-[6px]">
-          <motion.div
-            className="w-[3px] h-[8px] rounded-full bg-white/70"
-            animate={{ y: [0, 10, 0], opacity: [1, 0.2, 1] }}
-            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
-          />
-        </div>
-        {/* Label */}
         <span
-          className="text-white/35 font-mono"
-          style={{
-            fontSize: '0.6rem',
-            letterSpacing: '0.22em',
-            textTransform: 'uppercase',
-            writingMode: 'vertical-rl',
-          }}
+          className="text-white/40 font-mono"
+          style={{ fontSize: '0.58rem', letterSpacing: '0.28em', textTransform: 'uppercase' }}
         >
           scroll
         </span>
+        {/* Animated bouncing chevrons — clearly visible */}
+        <div className="flex flex-col items-center gap-[3px]">
+          {[0, 1, 2].map((i) => (
+            <motion.svg
+              key={i}
+              width="14" height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+              stroke="white"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              animate={{ opacity: [0.15, 0.8, 0.15] }}
+              transition={{
+                duration: 1.4,
+                repeat: Infinity,
+                ease: 'easeInOut',
+                delay: i * 0.22,
+              }}
+            >
+              <path d="M1 1l6 6 6-6" />
+            </motion.svg>
+          ))}
+        </div>
       </motion.div>
     </section>
   )
