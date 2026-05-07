@@ -10,7 +10,7 @@ export type RegisterResult =
 // onboarding@resend.dev solo puede enviar a ese correo hasta verificar un dominio propio
 // TODO: cambiar TEST_TO a 'hola@sosac.org' y FROM a 'Climate Roots <noreply@sosac.org>'
 //       cuando sosac.org esté verificado en Resend → Domains
-const TEST_TO = process.env.RESEND_TEST_TO ?? 'taek1701@gmail.com'
+const TEST_TO = 'santiago.ariasp.dev@gmail.com'
 const FROM = 'onboarding@resend.dev'
 
 export async function registerParticipant(
@@ -99,19 +99,21 @@ export async function registerParticipant(
     console.log('[Resend] Enviados:', { notif: notif.data?.id, confirm: confirm.data?.id })
 
     if (notif.error || confirm.error) {
-      console.error('[Resend] Error en respuesta:', notif.error ?? confirm.error)
+      const resendErr = notif.error ?? confirm.error
+      console.error('[Resend] Error en respuesta:', resendErr)
       return {
         success: false,
-        error: 'Hubo un problema al enviar. Intenta de nuevo.',
+        error: `Error Resend: ${resendErr?.message ?? JSON.stringify(resendErr)}`,
       }
     }
 
     return { success: true }
   } catch (err) {
-    console.error('[Resend] Excepción:', err)
+    const msg = err instanceof Error ? err.message : JSON.stringify(err)
+    console.error('[Resend] Excepción:', msg)
     return {
       success: false,
-      error: 'No se pudo enviar. Por favor escríbenos por WhatsApp.',
+      error: `Excepción: ${msg}`,
     }
   }
 }
