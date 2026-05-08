@@ -2,7 +2,7 @@
 
 > A production-grade digital catalogue and interactive garden map built for **SOSAC (Sociedad Sostenible A.C.)**, an environmental NGO driving urban ecological transformation in Monterrey, México.
 
-**Live site →** [climaterootssos.vercel.app](https://climaterootssos.vercel.app)
+**Live site →** [climateroots.vercel.app](https://climateroots.vercel.app)
 
 ---
 
