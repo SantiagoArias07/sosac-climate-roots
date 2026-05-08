@@ -8,23 +8,23 @@
 
 ## Preview
 
-<!-- Drag and drop your screenshots below — 2 per row -->
-
-<table>
-  <tr>
-    <td><img src="" alt="Hero" width="420"/></td>
-    <td><img src="" alt="Garden Map" width="420"/></td>
-  </tr>
-  <tr>
-    <td><img src="" alt="Plant Catalogue" width="420"/></td>
-    <td><img src="" alt="Café & Jardín" width="420"/></td>
-  </tr>
-  <tr>
-    <td><img src="" alt="Dark Mode" width="420"/></td>
-    <td><img src="" alt="Mobile" width="420"/></td>
-  </tr>
-</table>
-
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/63eda814-2cd9-466c-8ae5-065d45f586cb"        
+  width="48%" alt="Home" />       
+    <img src="https://github.com/user-attachments/assets/75b3ba0d-8e18-40b3-bdb1-b55f25829755" 
+  width="48%" alt="Subject" />         
+    <br/><br/>                       
+    <img src="https://github.com/user-attachments/assets/2a7c9b72-5a62-4655-873d-70726b8a04e4"        
+  width="48%" alt="Tasks" />         
+    <img src="https://github.com/user-attachments/assets/665b5658-cfe2-4aac-9360-fa48cfb0932d" 
+  width="48%" alt="Planner" />          
+    <br/><br/>
+    <img src="https://github.com/user-attachments/assets/af7b9f16-8db8-46eb-8f4c-23128dec27cc"        
+  width="48%" alt="Exams" />         
+    <img src="https://github.com/user-attachments/assets/48bfb934-f6dc-4dd8-bfbd-a9cdf6a2f03c" 
+  width="48%" alt="Grades" />
+  </div>
+  
 ---
 
 ## The Project
